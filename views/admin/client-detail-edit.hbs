@@ -1,0 +1,24 @@
+<form action="/client/{{client._id}}/edit" method="post">
+    <label>Company</label>
+    <input type="text" name="editedCompany" value="{{ client.companyName }}" >
+
+    <label>Address:</label>
+    <input type="string" name="editedAddress" value="{{ client.address }}">
+
+    <label>Number of Elevators</label>
+    <input type="number" name="editedElevators" value="{{ client.elevators }}">
+
+    <label>Number of Floors</label>
+    <input type="number" name="editedFloors" value="{{ client.floors }}">
+
+    <label for="">My comment:</label>
+    <textarea name="myComment" id="" cols="30" rows="3">{{ client.myComment }}</textarea>
+
+    <label for="">Paid: </label>
+    <input type="radio" name="paid" id="" value="true">
+    <label for="">Not paid: </label>
+    <input type="radio" name="paid" id="" value="false">
+    <button type="submit">Save changes</button>
+
+
+</form>

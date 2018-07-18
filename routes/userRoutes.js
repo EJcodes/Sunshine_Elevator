@@ -44,35 +44,19 @@ userRouter.post('/signup', (req, res, next) => {
     }) // ends the .then from the user.findOne
 }); // ends the route
 
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
 userRouter.get('/login', (req, res, next)=>{
     res.render('login',{"message":req.flash("error")}); 
 });
 
 userRouter.post('/login', passport.authenticate("local", {
-    successRedirect: "/",
+    successRedirect: "/clientInfo",
+    // need to make it when you already gave info to take you dashboard.
     failureRedirect: "/login",
     failureFlash: true,
     passReqToCallback: true
 }));
+
+
 
 
 

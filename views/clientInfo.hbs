@@ -1,4 +1,4 @@
-<form action="/login" method="post">
+<form action="/clientInfo" method="post">
 
     <label>Company</label>
     <input type="text" name="company">
@@ -12,46 +12,50 @@
     <label>Number of Floors</label>
     <input type="number" name="floors">
 
+    <button type="submit">Submit</button>
+
     <fieldset>
     <legend>Check for Services needed</legend>
      <div>
-        <input type="checkbox" id="FullReno" name="service"
-               value="fullRenovation" />
-        <label for="fullRenovation">Full Renovation</label>
+        <input type="checkbox" id="FullReno" name="service" 
+               value="modernization" />
+        <label for="">Modernization</label>
     </div>
 
     <div>
         <input type="checkbox" id="cabReno" name="service"
-               value="Cab Renovation" />
+               value="cabRenovation" />
         <label for="">Cab Renovation</label>
     </div>
 
     <div>
         <input type="checkbox" id="circutReno" name="service"
-               value="CircutBoardRenovation" />
-        <label for="circutReno">Circut Board Renovation</label>
+               value="circutBoardRenovation" />
+        <label for="">Repairs</label>
     </div>
 
     <div>
         <input type="checkbox" id="newElevator" name="service"
                value="newElevator" />
-        <label for="newElevator">Elevator Installation</label>
+        <label for="">Elevator Installation</label>
     </div>
 
     <div>
         <input type="checkbox" id="buttons" name="service"
-               value="button" />
-        <label for="claws">Hydro</label>
+               value="hydrolic" />
+        <label for="">Hydrolic</label>
     </div>
 
     <div>
         <input type="checkbox" id="buttons" name="service"
-               value="button" />
-        <label for="claws">Traction</label>
+               value="traction" />
+        <label for="">Traction</label>
     </div>
 
 </fieldset>
    
 
-
+{{#if errorMessage}}
+<div>{{errorMessage}}</div>
+{{/if}}
 </form>

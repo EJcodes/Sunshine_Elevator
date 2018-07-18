@@ -1,0 +1,17 @@
+<div>
+    {{#each clientInfo}}
+    <p>Company name: <a href="/admin/client/{{this._id}}">{{this.companyName}}</a></p>
+    <p>Address: {{ this.address }}</p>
+    <p>Elevators: {{ this.elevators }}</p>
+    <p>Floors: {{ this.floors }}</p>
+    <p>Services: {{ this.service }} </p>
+    <p>Paid: {{ this.paid }}</p>
+    {{#if this.myComment}}
+    <p> My comment: {{ this.myComment }} </p>
+    {{/if}}
+    <form action="/client/{{this._id}}/delete" method="post">
+        <button type="submit">Delete</button>
+    </form>
+<hr>
+    {{/each}}
+</div>

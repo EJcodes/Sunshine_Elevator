@@ -109,7 +109,12 @@ app.use('/', index);
 const userRoutes = require('./routes/userRoutes');
 app.use('/', userRoutes);
 
-const clientRoute = require('./routes/clientRoute');
-app.use('/', clientRoute);
+
+const clientRoutes = require('./routes/clientRoutes');
+app.use('/', clientRoutes);
+
+const adminRoutes = require('./routes/adminRoutes');
+app.use('/', adminRoutes);
+
 
 module.exports = app;

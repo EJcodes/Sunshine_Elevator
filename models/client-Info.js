@@ -2,23 +2,22 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const clientSchema = new Schema({
+    paid: {type: Boolean, default: false },
     companyName: String,
     address: String, 
     elevators: Number,
     floors: String,
-    maintenance: Boolean,
-    cabRenovation: Boolean,
-    circbRenovation:Boolean,
-    newConstruction: Boolean,
-    buttonRepair: Boolean,
-    fireAlarmRepair: Boolean,
-    repair: Boolean,
+    service: String,
     email: String,
     phoneNumber: Number,
-    secondaryNumber: Number
+    secondaryNumber: Number,
+    elevType: String,
+    myComment: String
     
 },
-                                     {timestamps: true}
+    {
+        timestamps: true
+    }
   );
 
   const Client = mongoose.model("client", clientSchema);
