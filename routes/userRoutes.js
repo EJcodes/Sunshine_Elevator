@@ -3,7 +3,7 @@ const userRouter      = express.Router();
 const User            = require('../models/user');
 const bcrypt 		  = require('bcryptjs')
 const passport 		  = require('passport');
-const ensureLogin	  = require('connect-ensure-login');
+const ensureLogin	  = require('connect-ensure-login').ensureLoggedIn;
 
 
 
@@ -17,6 +17,7 @@ userRouter.post('/signup', (req, res, next) => {
 
     const thePassword = req.body.thePassword;
     const theUsername = req.body.theUsername;
+    const theUserType = req.body.userType;
     if(thePassword === "" || theUsername === ""){
         res.render('sign-up', {errorMessage: 'Please fill in both a username and password in order to create an account'})
         return;
@@ -33,7 +34,7 @@ userRouter.post('/signup', (req, res, next) => {
 
             const salt     = bcrypt.genSaltSync(10);
             const hashedPassword = bcrypt.hashSync(thePassword, salt);
-            User.create({username: theUsername, password: hashedPassword})
+            User.create({username: theUsername, password: hashedPassword , userType:theUserType})
             .then((response)=>{
                 console.log('second response from DB >>>>>>>>>>>>>>>>>>>>>>= ', response)
                 res.redirect('/');
@@ -49,13 +50,22 @@ userRouter.get('/login', (req, res, next)=>{
 });
 
 userRouter.post('/login', passport.authenticate("local", {
-    successRedirect: "/clientInfo",
+    successRedirect: "/fork",
     // need to make it when you already gave info to take you dashboard.
     failureRedirect: "/login",
     failureFlash: true,
     passReqToCallback: true
 }));
 
+userRouter.get("/fork", ensureLogin('/login'), (req,res,next)=>{
+    if (req.user.userType === "admin"){
+        console.log('sent me to admin Dash')
+        res.redirect('/admin/dashboard')
+    }else {
+        res.redirect('/clientInfo')
+    }
+
+})
 
 
 

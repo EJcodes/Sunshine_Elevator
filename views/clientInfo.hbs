@@ -1,59 +1,59 @@
-<form action="/clientInfo" method="post">
+<div class="col-sm-12">
+    <form action="/clientInfo" method="post">
 
-    <label>Company</label>
-    <input type="text" name="company">
+        <label>Company: </label>
+        <input type="text" name="company">
 
-    <label>Address:</label>
-    <input type="string" name="address">
+        <label>Email: </label>
+        <input type="string" name="email">
 
-    <label>Number of Elevators</label>
-    <input type="number" name="elevators">
+        <label>Address:</label>
+        <input type="string" name="address">
 
-    <label>Number of Floors</label>
-    <input type="number" name="floors">
+        <label>Number of Elevators:</label>
+        <input type="number" name="elevators">
 
-    <button type="submit">Submit</button>
+        <label>Number of Floors:</label>
+        <input type="number" name="floors">
 
-    <fieldset>
-    <legend>Check for Services needed</legend>
-     <div>
-        <input type="checkbox" id="FullReno" name="service" 
-               value="modernization" />
-        <label for="">Modernization</label>
-    </div>
 
-    <div>
-        <input type="checkbox" id="cabReno" name="service"
-               value="cabRenovation" />
-        <label for="">Cab Renovation</label>
-    </div>
 
-    <div>
-        <input type="checkbox" id="circutReno" name="service"
-               value="circutBoardRenovation" />
-        <label for="">Repairs</label>
-    </div>
 
-    <div>
-        <input type="checkbox" id="newElevator" name="service"
-               value="newElevator" />
-        <label for="">Elevator Installation</label>
-    </div>
+        <fieldset>
+            <legend>Check Services needed</legend>
+            <div>
+                <input type="checkbox" id="modernization" name="service" value="modernization" />
+                <label for="">Modernization: </label>
+            </div>
 
-    <div>
-        <input type="checkbox" id="buttons" name="service"
-               value="hydrolic" />
-        <label for="">Hydrolic</label>
-    </div>
+            <div>
+                <input type="checkbox" id="cabRenovation" name="service" value="cabRenovation" />
+                <label for="">Cab Renovation: </label>
+            </div>
 
-    <div>
-        <input type="checkbox" id="buttons" name="service"
-               value="traction" />
-        <label for="">Traction</label>
-    </div>
+            <div>
+                <input type="checkbox" id="repairs" name="service" value="repairs" />
+                <label for="">Repairs</label>
+            </div>
 
-</fieldset>
-   
+            <div>
+                <input type="checkbox" id="newElevator" name="service" value="newElevator" />
+                <label for="">Elevator Installation</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="buttons" name="service" value="hydrolic" />
+                <label for="">Hydrolic System</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="buttons" name="service" value="traction" />
+                <label for="">Traction Sytem</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+</div>
 
 {{#if errorMessage}}
 <div>{{errorMessage}}</div>

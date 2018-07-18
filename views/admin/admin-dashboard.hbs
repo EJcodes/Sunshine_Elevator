@@ -1,6 +1,8 @@
 <div>
     {{#each clientInfo}}
-    <p>Company name: <a href="/admin/client/{{this._id}}">{{this.companyName}}</a></p>
+    <p>Company name:
+        <a href="/admin/client/{{this._id}}">{{this.companyName}}</a>
+    </p>
     <p>Address: {{ this.address }}</p>
     <p>Elevators: {{ this.elevators }}</p>
     <p>Floors: {{ this.floors }}</p>
@@ -12,6 +14,5 @@
     <form action="/client/{{this._id}}/delete" method="post">
         <button type="submit">Delete</button>
     </form>
-<hr>
-    {{/each}}
+    <hr> {{/each}}
 </div>
