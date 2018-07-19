@@ -53,9 +53,12 @@
             <li class="divider"></li>
             <li><a href="/clientInfo">Get A Quote</a></li>
             <li class="divider"></li>
-            <li><a href="/myInfo">My Info</a></li>
-            <li class="divider"></li>
             <li><a href="/testimonials">Testimonials</a></li>
+            <li class="divider"></li>
+            {{#if user}}
+            <li><a href="/logout">logout</a></li>
+            {{/if}}
+            
           </ul>
         </li>
       </ul>

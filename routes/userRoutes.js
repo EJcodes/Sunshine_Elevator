@@ -68,7 +68,10 @@ userRouter.get("/fork", ensureLogin('/login'), (req,res,next)=>{
 })
 
 
-
+userRouter.get("/logout", ensureLogin('/'), (req, res, next)=>{
+    req.logout();
+    res.redirect("/")
+})
 
 
 

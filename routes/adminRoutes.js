@@ -11,7 +11,7 @@ router.get('/admin/dashboard', ensureLogin('/login'), (req, res, next) => {
     }
     Client.find()
         .then(allClientsInfo => {
-            res.render('admin/admin-dashboard', { clientInfo: allClientsInfo });
+            res.render('admin/admin-dashboard', { clientInfo: allClientsInfo, user: req.user });
         })
         .catch(err => next(err))
 });
@@ -20,7 +20,7 @@ router.get('/admin/client/:id', ensureLogin('/login'), (req, res, next) => {
     const clientId = req.params.id;
     Client.findById(clientId)
         .then(client => {
-            res.render('admin/client-detail-edit', { client: client })
+            res.render('admin/client-detail-edit', { client: client , user: req.user })
         })
         .catch(err => next(err))
 })

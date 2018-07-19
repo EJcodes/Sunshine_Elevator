@@ -7,7 +7,7 @@ const ensureLogin    = require('connect-ensure-login').ensureLoggedIn;
 
 
 clientRouter.get('/clientInfo', ensureLogin('/login'), (req, res, next) => {
-    res.render('clientInfo')
+    res.render('clientInfo', {user: req.user})
 });
 
 clientRouter.post('/clientInfo', ensureLogin('/login'), (req, res, next) => {
@@ -18,7 +18,7 @@ clientRouter.post('/clientInfo', ensureLogin('/login'), (req, res, next) => {
     const numberOfFloors = req.body.floors;
     const service = req.body.service;
     const email = req.body.email;
-    const reviews = req.body.reviewer
+    const reviewer = req.body.reviewer
     // if statment is to make sure the fields are filled out before actually submiting to the server
 
     if (company === "" || address === "" || numberOfElevators === "" || numberOfFloors === "") {
