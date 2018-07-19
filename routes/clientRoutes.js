@@ -1,9 +1,9 @@
-const express = require('express');
-const clientRouter = express.Router();
-const Client = require('../models/client-Info');
-const bcrypt = require('bcryptjs')
-const passport = require('passport');
-const ensureLogin = require('connect-ensure-login').ensureLoggedIn;
+const express        = require('express');
+const clientRouter   = express.Router();
+const Client         = require('../models/client-Info');
+const bcrypt         = require('bcryptjs')
+const passport       = require('passport');
+const ensureLogin    = require('connect-ensure-login').ensureLoggedIn;
 
 
 clientRouter.get('/clientInfo', ensureLogin('/login'), (req, res, next) => {
@@ -18,7 +18,7 @@ clientRouter.post('/clientInfo', ensureLogin('/login'), (req, res, next) => {
     const numberOfFloors = req.body.floors;
     const service = req.body.service;
     const email = req.body.email;
-
+    const reviews = req.body.reviewer
     // if statment is to make sure the fields are filled out before actually submiting to the server
 
     if (company === "" || address === "" || numberOfElevators === "" || numberOfFloors === "") {
@@ -31,7 +31,8 @@ clientRouter.post('/clientInfo', ensureLogin('/login'), (req, res, next) => {
         address: address,
         elevators: numberOfElevators,
         floors: numberOfFloors,
-        service: service
+        service: service,
+        reviews: reviewer
     })
         .then((response) => {
             console.log('Client info is in the database', response);
@@ -43,10 +44,10 @@ clientRouter.post('/clientInfo', ensureLogin('/login'), (req, res, next) => {
 });
 
 
-// route to render the paid clients review page
-clientRouter.get('/testominals', ensureLogin('/login'), (req, res, next) => {
-    res.render('testominals')
-});
+// // route to render the paid clients review page
+// clientRouter.get('/testimonials', ensureLogin('/login'), (req, res, next) => {
+//     res.render('testimonials')
+// });
 
 
 //route to the about us page 

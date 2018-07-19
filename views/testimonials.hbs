@@ -1,0 +1,9 @@
+
+<form action = "/clientFeedback" method="post">
+    <label for="review">Tell us what you thoughts!</label>
+    {{!-- example of a label without a for attribute, cannot click on the words, sad :( --}}
+    <textarea name="clientComment" id="review" cols="30" rows="10"></textarea>
+    <input type="hidden" value = {{user._id}} name = "reviewer"}>
+    <button type="submit">Post It</button>
+
+</form>

@@ -12,6 +12,7 @@ const clientSchema = new Schema({
     phoneNumber: Number,
     secondaryNumber: Number,
     elevType: String,
+    reviewer: {type: Schema.Types.ObjectId, ref: 'User'},
     myComment: String
     
 },

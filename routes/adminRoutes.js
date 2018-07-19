@@ -16,7 +16,7 @@ router.get('/admin/dashboard', ensureLogin('/login'), (req, res, next) => {
         .catch(err => next(err))
 });
 
-router.get('/admin/client/:id', (req, res, next) => {
+router.get('/admin/client/:id', ensureLogin('/login'), (req, res, next) => {
     const clientId = req.params.id;
     Client.findById(clientId)
         .then(client => {
@@ -25,7 +25,7 @@ router.get('/admin/client/:id', (req, res, next) => {
         .catch(err => next(err))
 })
 
-router.post('/client/:id/edit', (req, res, next) => {
+router.post('/client/:id/edit', ensureLogin('/login'), (req, res, next) => {
     const clientId = req.params.id;
     const updates = {
         companyName: req.body.editedCompany,
@@ -43,7 +43,7 @@ router.post('/client/:id/edit', (req, res, next) => {
         .catch(err => next(err))
 })
 // Delete block for the comments 
-router.post('/client/:id/delete', (req, res, next) => {
+router.post('/client/:id/delete',ensureLogin('/login'), (req, res, next) => {
     const clientId = req.params.id;
     Client.findByIdAndRemove(clientId)
         .then(() => {

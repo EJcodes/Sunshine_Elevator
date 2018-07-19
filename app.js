@@ -116,5 +116,6 @@ app.use('/', clientRoutes);
 const adminRoutes = require('./routes/adminRoutes');
 app.use('/', adminRoutes);
 
-
+const feedBackRoutes = require('./routes/clientFeedback');
+app.use('/', feedBackRoutes);
 module.exports = app;

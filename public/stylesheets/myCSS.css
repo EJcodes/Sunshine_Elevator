@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Raleway|Roboto+Slab');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Raleway', sans-serif;  */
+
+* {
+    margin: 0px ;
+    padding:0px ;
+    }
+
 body{
     background:url('http://www.wallpaperup.com/uploads/wallpapers/2012/10/21/20181/cad2441dd3252cf53f12154412286ba0.jpg');
     padding:50px;
@@ -60,3 +71,79 @@ body{
     background-image: url("/images/Title.jpg");
     
 }
+
+  
+  a.orghover{
+    background-color: #D3602E;
+  }
+  h1 , h2 , h3 , h4 , h5{
+      font-family: Raleway;
+    }
+  
+  h1 {
+      font-size: 7em;
+      text-align: center;
+      text-transform: uppercase;
+      color: #D3602E;
+    }
+  
+    /* NAVIGATION BAR / HEADER */
+    .nav-bar {
+    background-color: black;
+    color: white;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    height: 40px;
+    }
+  
+    .nav-bar-ul {
+      width: 1200px;
+      margin: 0 auto;
+  
+    }
+  
+    .nav-bar-li {
+    list-style-type: none;
+    text-align: center;
+    float: left;
+    width: 33%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-family: 'Roboto Slab', serif;
+  
+    }
+  
+    .nav-bar-item a{
+      color: #D3602E;
+      font-size: 3em;
+      text-decoration: none;
+    }
+  
+  /* HEADER */
+  
+  .header h1{
+    position: absolute;
+    top: 30%;
+    margin:0 ;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .bgsun {
+      background-image:url("/images/Title.jpg");
+   
+  
+  
+    }
+  .quote {
+      font-size: 2.5em;
+      position: absolute;
+      left: 13%;
+      bottom: 30vh; /*was 25 */
+      font-family:"Roboto Slab", serif;
+    }
+  
+  
+  
+  
+  
