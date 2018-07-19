@@ -7,3 +7,14 @@
     <button type="submit">Post It</button>
 
 </form>
+
+<div class="clientComments">
+    <ul class="eachClientComment">
+        {{#each client}}
+            {{#if this.myComment}}
+                <li>{{this.myComment}}</li>
+            {{/if}}
+        {{/each}}
+    </ul>
+
+</div>

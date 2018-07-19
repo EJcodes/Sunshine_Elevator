@@ -4,11 +4,18 @@ const Client           = require('../models/client-Info');
 const ensureLogin      = require('connect-ensure-login').ensureLoggedIn;
 
 
-clientFeedback.get('/testimonials', ensureLogin("/login"), (req, res, next)=>{
-        res.render('testimonials', {user: req.user})
+clientFeedback.get('/testimonials/', ensureLogin("/login"), (req, res, next)=>{
+    Client.find()
+    .then((clientFromDB) => {
+        var data = {
+            user: req.user,
+            client: clientFromDB
+        }
+        res.render('testimonials', data)
     })
+})
 
-clientFeedback.post('/clientFeedback',  (req, res, next)=>{
+clientFeedback.post('/clientFeedback', ensureLogin("/login"),  (req, res, next)=>{
     const reviewer = req.body.reviewer;
     const clientReview = req.body.clientComment;
    
@@ -22,6 +29,7 @@ Client.create({
     myComment: clientReview,
 })
     .then((response)=>{
+        console.log("this the response after saving comment ==================== ", response)
         res.redirect('/testimonials')
     })
     .catch((error)=>{
