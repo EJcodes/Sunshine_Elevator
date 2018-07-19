@@ -140,12 +140,13 @@ body{
       background-size: 100% 100%;
       height: 100vh;
       width: 100vw;
+      max-height: 900px;
     }
     .quote {
         font-size: 2.4vw;
         position: absolute;
-        left: 13%;
-        bottom: 30vh; /*was 25 */
+        left: 14%;
+        bottom: 40vh; /*was 25 */
         font-family: 'Open Sans', sans-serif;;
         color:#D3602E;
     }
@@ -156,6 +157,7 @@ body{
     background-image:url("/images/section2img.jpg");
     background-size: 100% 100%;
     height: 100vh;
+    max-height: 900;
     /* width: 50vw; */
     
   
