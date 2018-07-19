@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:300');
+
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Raleway|Roboto+Slab');
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Merriweather', serif;
@@ -75,9 +78,9 @@ body{
   a.orghover{
     background-color: #D3602E;
   }
-  h1 , h2 , h3 , h4 , h5{
+  /* h1 , h2 , h3 , h4 , h5{
       font-family: Raleway;
-    }
+    } */
   
   h1 {
       font-size: 7em;
@@ -121,27 +124,50 @@ body{
   /* HEADER */
   
   .header h1{
+    font-family: 'Work Sans', sans-serif;
     position: absolute;
-    top: 30%;
+    top: 40%;
     margin:0 ;
     text-align: center;
     width: 100%;
+    font-size: 6.9vw;
   }
+  /* section one of the index page  */
+
   
   .bgsun {
       background-image:url("/images/Title.jpg");
       background-size: 100% 100%;
       height: 100vh;
       width: 100vw;
-   }
-  .quote {
-      font-size: 2.5em;
-      position: absolute;
-      left: 13%;
-      bottom: 30vh; /*was 25 */
-      font-family:"Roboto Slab", serif;
     }
+    .quote {
+        font-size: 2.4vw;
+        position: absolute;
+        left: 13%;
+        bottom: 30vh; /*was 25 */
+        font-family: 'Open Sans', sans-serif;;
+        color:#D3602E;
+    }
+    /* section 2 of index page */
+
+    .bgsection2{
+    background-color: black;
+    background-image:url("/images/section2img.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+    /* width: 50vw; */
     
+  
+  
+    }
+  
+    .section2bgblk{
+        background-color: black;
+        flex-direction: row
+    }
+
+
   /* Bootstrap Changes */
   .navbar{
       position: relative;
@@ -149,3 +175,28 @@ body{
       margin-bottom: 0px;
       border: 1px solid transparent;
   }
+
+  .sunshine:hover {
+    color: #D3602E;
+    background-color: transparent;
+}
+.sunshine{
+    color: #777;
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+/* index page sections title font */
+.t-font{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 4.9vw;
+    color: #D3602E
+    
+}
+
+.p-font{
+    font-size: 2.4vw;
+}
