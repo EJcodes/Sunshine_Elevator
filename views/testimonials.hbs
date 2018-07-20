@@ -1,4 +1,7 @@
+<div class="testbg">
 
+<div class="col-lg-2"></div>
+<div class="col-lg-8">
 <form action = "/clientFeedback" method="post">
     <label for="review">Tell us what you thoughts!</label>
     {{!-- example of a label without a for attribute, cannot click on the words, sad :( --}}
@@ -7,7 +10,7 @@
     <button type="submit">Post It</button>
 
 </form>
-
+<br>
 <div class="clientComments">
     <ul class="eachClientComment">
         {{#each client}}
@@ -16,5 +19,8 @@
             {{/if}}
         {{/each}}
     </ul>
+</div>
 
+</div>
+<div class="col-lg-2"></div>
 </div>

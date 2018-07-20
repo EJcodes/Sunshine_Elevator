@@ -330,10 +330,19 @@ body{
     position: relative;
 }
 
-.testbg{
+.regbg{
     background-image: url('/images/himynameis.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
+}
+
+.testbg{
+    background-image: url('/images/elevator3.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+
 }
