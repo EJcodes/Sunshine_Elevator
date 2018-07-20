@@ -290,3 +290,14 @@ body{
     position: relative;
     
 }
+
+
+
+/* About Us page */
+.aubg{
+    background-image: url('/images/hello.jpg');
+    background-size:cover;
+    height: 100vh;
+    position: relative;
+
+}
