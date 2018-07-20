@@ -1,3 +1,7 @@
+<div class="testbg">
+<div class="col-lg-2"></div>
+<div class="col-lg-8">
+    <br>
 <form  action="/signup" method="post">
     
     <label for="username">Desired Username: </label>
@@ -7,7 +11,6 @@
     <input id="password"  type="password" name="thePassword">
 
     <input type="hidden" value="client" name="userType">
-
 
 
     <button>Submit</button>
@@ -20,3 +23,6 @@
 {{#if errorMessage}}
 <div>{{errorMessage}}</div>
 {{/if}}
+</div>
+<div class="col-lg-2"></div>
+</div>
