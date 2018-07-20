@@ -323,7 +323,7 @@ body{
 /* admin page css */
 
 .lightbg{
-    background-image: url('/images/admin.jpg');
+    background-image: url('/images/adminbg.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     height: 100vh;
