@@ -296,8 +296,11 @@ body{
 /* About Us page */
 .aubg{
     background-image: url('/images/hello.jpg');
-    background-size:cover;
+    background-size:covers;
     height: 100vh;
     position: relative;
-
 }
+/* .connectionimg{
+    
+    
+} */

@@ -19,6 +19,7 @@ clientRouter.post('/clientInfo', ensureLogin('/login'), (req, res, next) => {
     const service = req.body.service;
     const email = req.body.email;
     const reviewer = req.body.reviewer
+    const phoneNumber = req.body.phoneNumber
     // if statment is to make sure the fields are filled out before actually submiting to the server
 
     if (company === "" || address === "" || numberOfElevators === "" || numberOfFloors === "") {
@@ -32,7 +33,8 @@ clientRouter.post('/clientInfo', ensureLogin('/login'), (req, res, next) => {
         elevators: numberOfElevators,
         floors: numberOfFloors,
         service: service,
-        reviews: reviewer
+        reviews: reviewer,
+        phoneNumber: phoneNumber
     })
         .then((response) => {
             console.log('Client info is in the database', response);
