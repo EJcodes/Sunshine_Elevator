@@ -296,11 +296,21 @@ body{
 /* About Us page */
 .aubg{
     background-image: url('/images/hello.jpg');
-    background-size:covers;
+    background-size:cover;
+    background-repeat: no-repeat;
     height: 100vh;
     position: relative;
 }
 /* .connectionimg{
     
     
-} */
+} 
+*/
+
+.libg{
+    background-image: url('/images/login.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}

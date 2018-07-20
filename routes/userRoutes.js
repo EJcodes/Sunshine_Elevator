@@ -66,6 +66,9 @@ userRouter.get("/fork", ensureLogin('/login'), (req,res,next)=>{
     }
 
 })
+userRouter.get('/aboutUs', (req, res, next) =>{
+    res.render('about-Us')
+});
 
 
 userRouter.get("/logout", ensureLogin('/'), (req, res, next)=>{
