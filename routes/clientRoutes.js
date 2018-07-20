@@ -55,6 +55,10 @@ clientRouter.get('/aboutUs', ensureLogin('/login'), (req, res, next) => {
     res.render('about-us')
 });
 
+//route to the contact us page
+clientRouter.get('/contactUs', ensureLogin('/login'), (req, res, next) => {
+    res.render('contact-us')
+});
 
 
 

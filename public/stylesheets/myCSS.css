@@ -1,7 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:300');
 
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Raleway|Roboto+Slab');
+
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Merriweather', serif;
 font-family: 'Roboto Slab', serif;
@@ -137,20 +136,20 @@ body{
   /* section font alignment for index page  */
   .insection h1{
     color: white;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', Sans-Serif;
     position: absolute;
     top: 10%;
     margin:0 ;
     text-align: left;
     width: 100%;
-    font-size: 5.2vw;
+    font-size: 4.2vw;
   }
   .quote2 {
-    font-size: 2.4vw;
+    font-size: 1.4vw;
     position: absolute;
     left: 14%;
-    bottom: 20vh; /*was 25 */
-    font-family: 'Open Sans', sans-serif;;
+    bottom: 25vh; /*was 25 */
+    font-family:'Unica One', cursive;
     color:#D3602E;
 }
 .damn-btn{
@@ -158,6 +157,7 @@ body{
     position: relative;
     top: 45vh;
     justify-content: center;
+    
 }
 
 
@@ -178,7 +178,7 @@ body{
       max-height: 900px;
     }
     .quote {
-        font-size: 2.4vw;
+        font-size: 2vw;
         position: absolute;
         left: 14%;
         bottom: 41vh; /*was 25 */
@@ -210,6 +210,15 @@ body{
         flex-direction: row
     }
 /* section 3 in index page */
+
+
+
+
+
+
+
+
+
 
   /* Bootstrap Changes */
   .navbar{
