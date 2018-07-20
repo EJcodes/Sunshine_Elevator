@@ -10,6 +10,9 @@ font-family: 'Raleway', sans-serif;  */
     margin: 0px ;
     padding:0px, 0px;
     }
+.white{
+    color:white;
+}
 body{
     background:url('/images/francisco-gomes-182329-unsplash.jpg');
    
@@ -314,3 +317,16 @@ body{
     height: 100vh;
     position: relative;
 }
+
+
+
+/* admin page css */
+
+.lightbg{
+    background-image: url('/images/admin.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
