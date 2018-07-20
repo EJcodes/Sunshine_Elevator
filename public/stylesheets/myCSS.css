@@ -12,7 +12,7 @@ font-family: 'Raleway', sans-serif;  */
     padding:0px, 0px;
     }
 body{
-    background:url('http://www.wallpaperup.com/uploads/wallpapers/2012/10/21/20181/cad2441dd3252cf53f12154412286ba0.jpg');
+    background:url('/images/francisco-gomes-182329-unsplash.jpg');
     padding:50px;
 }
 
@@ -126,12 +126,46 @@ body{
   .header h1{
     font-family: 'Work Sans', sans-serif;
     position: absolute;
-    top: 40%;
+    top: 35%;
     margin:0 ;
     text-align: center;
     width: 100%;
     font-size: 6.9vw;
   }
+
+
+  /* section font alignment for index page  */
+  .insection h1{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    position: absolute;
+    top: 10%;
+    margin:0 ;
+    text-align: left;
+    width: 100%;
+    font-size: 5.2vw;
+  }
+  .quote2 {
+    font-size: 2.4vw;
+    position: absolute;
+    left: 14%;
+    bottom: 20vh; /*was 25 */
+    font-family: 'Open Sans', sans-serif;;
+    color:#D3602E;
+}
+.damn-btn{
+    display:flex;
+    position: relative;
+    top: 45vh;
+    justify-content: center;
+}
+
+
+
+
+
+
+
   /* section one of the index page  */
 
   
@@ -140,35 +174,42 @@ body{
       background-size: 100% 100%;
       height: 100vh;
       width: 100vw;
+      min-height: 200px;
       max-height: 900px;
     }
     .quote {
         font-size: 2.4vw;
         position: absolute;
         left: 14%;
-        bottom: 37vh; /*was 25 */
+        bottom: 41vh; /*was 25 */
         font-family: 'Open Sans', sans-serif;;
         color:#D3602E;
     }
-    /* section 2 of index page */
+    /* -=-=-=-=--=-=section 2 of index page=-=-=-=-=-=-=-=- */
+    .sec2bg{
+        background-image: url("/images/section2.jpg");
+        background-size: 100% 100%;
+        height: 100vh;
+        min-height: 200px;
+        max-height: 400px;
+    /* width: 50vw; */
+
+    }
 
     .bgsection2{
     background-color: black;
-    background-image:url("/images/section2img.jpg");
+    background-image:url("/public/images/elevred.jpg//");
     background-size: 100% 100%;
     height: 100vh;
-    max-height: 900;
+    max-height: 400px;
     /* width: 50vw; */
-    
-  
-  
     }
   
     .section2bgblk{
         background-color: black;
         flex-direction: row
     }
-
+/* section 3 in index page */
 
   /* Bootstrap Changes */
   .navbar{
