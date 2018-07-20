@@ -272,3 +272,21 @@ body{
 .p-font{
     font-size: 2.4vw;
 }
+
+
+
+
+/* Contact us page css */
+
+.cubg{
+    /* background-image: url('/images/hello.jpg'); */
+    background-color: rgba(128,128,128,1);
+}
+
+.nothere{
+    background-image: url('/images/pulley-17505_1920.jpg');
+    background-size:contain;
+    height: 100vh;
+    position: relative;
+    
+}
