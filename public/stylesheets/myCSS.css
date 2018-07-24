@@ -275,6 +275,26 @@ body{
 .p-font{
     font-size: 2.4vw;
 }
+/* contact Info page  */
+.cileft{
+    background-image: url('/images/cileft.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    position: relative;
+    
+}
+.ciright{
+    background-image: url('/images/elevator3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100vh;
+    width: 100vh; */
+    position: relative;
+   
+    
+}
+
 
 
 
@@ -304,11 +324,6 @@ body{
     height: 100vh;
     position: relative;
 }
-/* .connectionimg{
-    
-    
-} 
-*/
 
 .libg{
     background-image: url('/images/login.jpg');
@@ -344,5 +359,20 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
+
+}
+
+
+
+
+
+/* ABOUT US PAGE STYLING */
+.aubg{
+    
+    background-image:url('/images/elevator33.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* border:2px solid red; */
 
 }
