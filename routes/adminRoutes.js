@@ -24,7 +24,7 @@ router.get('/admin/client/:id', ensureLogin('/login'), (req, res, next) => {
         })
         .catch(err => next(err))
 })
-
+// edit
 router.post('/client/:id/edit', ensureLogin('/login'), (req, res, next) => {
     const clientId = req.params.id;
     const updates = {
@@ -42,6 +42,9 @@ router.post('/client/:id/edit', ensureLogin('/login'), (req, res, next) => {
         })
         .catch(err => next(err))
 })
+
+
+
 // Delete block for the comments 
 router.post('/client/:id/delete',ensureLogin('/login'), (req, res, next) => {
     const clientId = req.params.id;

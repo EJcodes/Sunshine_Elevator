@@ -156,11 +156,12 @@ body{
     font-family:'Unica One', cursive;
     color:#D3602E;
 }
-.damn-btn{
+.index-btn{
     display:flex;
     position: relative;
-    top: 30vh;
-    justify-content: center;
+    top: 50vh;
+
+    justify-content:center;
     
 }
 
