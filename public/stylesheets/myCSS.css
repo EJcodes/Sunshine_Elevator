@@ -10,6 +10,20 @@ font-family: 'Raleway', sans-serif;  */
     margin: 0px ;
     padding:0px, 0px;
     }
+
+.myContainer{
+    display: flex;
+}
+
+.myConCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+    
 .white{
     color:white;
 }
@@ -326,12 +340,17 @@ body{
     position: relative;
 }
 
+
 .libg{
     background-image: url('/images/login.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
+}
+
+.abComment{
+    width:100%;
 }
 
 
