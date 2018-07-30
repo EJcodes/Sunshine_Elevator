@@ -22,8 +22,9 @@ font-family: 'Raleway', sans-serif;  */
     height: 100vh;
 }
 
-.oj{
-    color:#D3602E
+a:hover{
+    color:#D3602E;
+    text-decoration: none;
 }
 
     
@@ -208,12 +209,18 @@ body{
         color:#D3602E;
     }
     /* -=-=-=-=--=-=section 2 of index page=-=-=-=-=-=-=-=- */
+    .section2btn{
+        display:flex;
+        position: relative;
+        bottom: 2vh;
+        justify-content: center;
+    }
     .sec2bg{
         background-image: url("/images/section2.jpg");
         background-size: 100% 100%;
         height: 100vh;
-        min-height: 200px;
-        max-height: 400px;
+        
+        max-height: 800px;
     /* width: 50vw; */
 
     }
@@ -223,7 +230,7 @@ body{
     background-image:url("/public/images/elevred.jpg//");
     background-size: 100% 100%;
     height: 100vh;
-    max-height: 600px;
+    max-height: 800px;
     /* width: 50vw; */
     }
   
@@ -232,14 +239,14 @@ body{
         flex-direction: row
     }
 /* section 3 in index page */
+
 .sec3bg{
     background-image: url("/images/forcontactus.jpg");
     background-size: 100% 100%;
     height: 100vh;
-    max-height: 600px;
-/* width: 50vw; */
-
+    max-height: 800px;
 }
+
 .quote3 {
     font-size: 1.4vw;
     position: absolute;
@@ -248,25 +255,15 @@ body{
     font-family:'Unica One', cursive;
     color:#D3602E;
 }
-.damn-btn2{
-    display:flex;
+
+
+
+/* Bootstrap Changes */
+.navbar{
     position: relative;
-    top: 50vh;
-    justify-content: center;
-    
-}
-
-
-
-
-
-
-  /* Bootstrap Changes */
-  .navbar{
-      position: relative;
-      min-height: 50px;
-      margin-bottom: 0px;
-      border: 1px solid transparent;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
   }
 
   .sunshine:hover {
@@ -293,6 +290,8 @@ body{
 .p-font{
     font-size: 2.4vw;
 }
+
+
 /* contact Info page  */
 .cileft{
     background-image: url('/images/cileft.jpg');
@@ -306,8 +305,6 @@ body{
     background-image: url('/images/elevator3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100vh;
-    width: 100vh; */
     position: relative;
     height: 100vh;
    
@@ -323,8 +320,6 @@ body{
     background-image: url('/images/whiteElevator.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100vh;
-    width: 100vh; */
     position: relative;
     height: 100vh;
 }
