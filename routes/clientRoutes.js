@@ -53,12 +53,12 @@ clientRouter.post('/clientInfo', ensureLogin('/login'), (req, res, next) => {
 
 
 //route to the about us page 
-clientRouter.get('/aboutUs', ensureLogin('/login'), (req, res, next) => {
+clientRouter.get('/aboutUs', (req, res, next) => {
     res.render('about-us')
 });
 
 //route to the contact us page
-clientRouter.get('/contactUs', ensureLogin('/login'), (req, res, next) => {
+clientRouter.get('/contactUs', (req, res, next) => {
     res.render('contact-Us')
 });
 
