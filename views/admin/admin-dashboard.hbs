@@ -2,6 +2,10 @@
     <div class="col-lg-2"></div>
     <div class="col-lg-8">
     {{#each clientInfo}}
+    <div class="text-justify">
+        <div class="text-center adminbg">
+            <br>
+            <br>
     <p>Company name:
         <a href="/admin/client/{{this._id}}">{{this.companyName}}</a>
     </p>
@@ -16,7 +20,12 @@
     <form action="/client/{{this._id}}/delete" method="post">
         <button type="submit">Delete</button>
     </form>
+    <br>
+    <br>
     <hr> {{/each}}
+
+    </div>
+    </div>
     </div>
     <div class="col-lg-2"></div>
 </div>

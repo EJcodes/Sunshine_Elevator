@@ -433,3 +433,14 @@ body{
     font-family: 'Work Sans', sans-serif;
     color:white;
 }
+
+/* Admin Dashboard */
+
+.admincontent {
+   margin:0 auto;
+   text-align: center;
+
+}
+.adminbg {
+    background-color:rgba(148, 152, 157, 0.2);
+}
