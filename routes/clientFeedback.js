@@ -14,7 +14,6 @@ clientFeedback.get('/testimonials/', ensureLogin("/login"), (req, res, next)=>{
         res.render('testimonials', data)
     })
 })
-
 clientFeedback.post('/clientFeedback', ensureLogin("/login"),  (req, res, next)=>{
     const reviewer = req.body.reviewer;
     const clientReview = req.body.clientComment;
