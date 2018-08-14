@@ -1,25 +1,62 @@
-<div class="lightbg">
-<form action="/client/{{client._id}}/edit" method="post">
+<div class="lightbg admincontent">
+    <br>
+    <br>
+    <br>
+    <div class="col-lg-4"></div>
+<form class="adminbg col-lg-4 " action="/client/{{client._id}}/edit" method="post">
+    <br>
+    <br>
     <label>Company</label>
+
+    <br>
     <input type="text" name="editedCompany" value="{{ client.companyName }}" >
+    <br>
+    <br>
+    <br>
 
     <label>Address:</label>
+    <br>
     <input type="string" name="editedAddress" value="{{ client.address }}">
+    <br>
+    <br>
+    <br>
 
     <label>Number of Elevators</label>
+    <br>
     <input type="number" name="editedElevators" value="{{ client.elevators }}">
+    <br>
+    <br>
+    <br>
 
     <label>Number of Floors</label>
+    <br>
     <input type="number" name="editedFloors" value="{{ client.floors }}">
+    <br>
+    <br>
+    <br>
 
     <label for="">My comment:</label>
+    <br>
     <textarea name="myComment" id="" cols="30" rows="3">{{ client.myComment }}</textarea>
+    <br>
+    <br>
+    <br>
 
     <label for="">Paid: </label>
+    <br>
     <input type="radio" name="paid" id="" value="true">
+    <br>
+    <br>
+    <br>
     <label for="">Not paid: </label>
+    <br>
+    
     <input type="radio" name="paid" id="" value="false">
-    <button type="submit">Save changes</button>
+    <br>
+    <br>
+    <br>
+    <button class="btn-primary btn" type="submit">Save changes</button>
+    <div class="col-lg-4"></div>
 
 
 </form>
