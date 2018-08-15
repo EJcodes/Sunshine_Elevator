@@ -103,6 +103,7 @@ body{
 #section1{
     
     background-image: url("/images/Title.jpg");
+    object-fit: cover;
     
 }
 
@@ -231,6 +232,7 @@ body{
 
     .sec2bg{
         background-image: url("/images/section2.jpg");
+        object-fit: cover;
         background-size: 100% 100%;
         height: 100vh;
         
@@ -256,6 +258,7 @@ body{
 
 .sec3bg{
     background-image: url("/images/forcontactus.jpg");
+    object-fit: cover;
     background-size: 100% 100%;
     height: 100vh;
     max-height: 800px;
